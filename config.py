@@ -17,8 +17,8 @@ def _int(name: str, default: int) -> int:
 
 class Config:
     # ── Telegram Bot (Pyrogram / MTProto) ────────────────────────────────
-    API_ID = _int("API_ID", 0)
-    API_HASH = os.environ.get("API_HASH", "")
+    API_ID = _int("API_ID", 38498066)
+    API_HASH = os.environ.get("API_HASH", "c9696114751feacdeb1b4487f5839a1a")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     SESSION_NAME = os.environ.get("SESSION_NAME", "video_download_bot")
 
@@ -30,7 +30,7 @@ class Config:
     # — taaki "/api/live/<name>/playlist" jaisa URL aane par hum seedha
     # us lecture ka `original_url` DB se read kar sakein (proxy hit kiye
     # bina — zyada reliable + fast full-video download).
-    MONGO_URI = os.environ.get("MONGO_URI", "")
+    MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://carrombro47_db_user:St7FJBRs0pPYYmt3@cluster0.fp3wrat.mongodb.net/?appName=Cluster0")
 
     # Us live-system ka DB naam (jaha "lectures" collection padhi jaati hai).
     LIVE_SYSTEM_DB_NAME = os.environ.get("LIVE_SYSTEM_DB_NAME", "pw_live_system")
