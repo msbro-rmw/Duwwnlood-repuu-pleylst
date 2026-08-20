@@ -1,0 +1,15 @@
+# Telegram (MTProto) — bot ka core
+pyrogram==2.0.106
+tgcrypto==1.2.5
+
+# MongoDB (async)
+motor>=3.6.0
+pymongo<4.10
+dnspython
+
+# HTTP client (m3u8/mpd fetch + direct file download)
+aiohttp
+
+# WSGI/health server ke liye kuch nahi chahiye — sirf Python stdlib
+# (helpers/healthcheck.py) use hota hai, isliye Flask/gunicorn yahan
+# zaroori nahi hai.
